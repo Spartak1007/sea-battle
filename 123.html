@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		.ship1{
+			background-color: black;
+		}
+		.ship2{
+			background-color: black;
+		}
+		.ship3{
+			background-color: black;
+		}
+		.ship4{
+			background-color: black;
+		}
+		.space{
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+<!-- это div-родитель -->
+<div style="background-image: url(https://img2.akspic.ru/originals/4/7/8/4/3/134874-akva-spokojnyj-video-volna-nebo-1920x1200.jpg?attachment=1); background-size: 100% 100%;">
+	<div class="col-7 mx-auto divR">
+		<div>
+			<h1 class="task">Найди все корабли и набери 20 очков</h1>
+			<h1>Score: <span class="score">0</span></h1>
+			<h2 class="h2g" style="color: cyan;">Корабль с 4 клетками - <span class="h2G">1</span></h2>
+			<h2 class="h2p" style="color: white;">Корабль с 3 клетками - <span class="h2P">2</span></h2>
+			<h2 class="h2o" style="color: blue;">Корабль с 2 клетками - <span class="h2O">3</span></h2>
+			<h2 class="h2y" style="color: yellow;">Корабль с 1 клетками - <span class="h2Y">4</span></h2>
+		</div>	
+		<!-- Дивы с нумерацией 1, 2, 3 и т.д. -->
+		<div class="row">
+			<div class="col-1 px-5 py-3  bg-warning text-center border ">
+
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>1</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>2</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>3</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>4</h4>
+			</div>
+			<div class="col-1 px-5  py-3 bg-warning text-center border">
+				<h4>5</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>6</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>7</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>8</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>9</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>10</h4>
+			</div>
+
+		</div>
+
+		<!--Линия А-->
+		<div class="row">
+			<div class="col-1 px-5 py-4 bg-warning text-center border">
+				<h4>A</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border ship4">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border ship4">
+			</div>
+			<div class="col-1  px-5 py-4 bg border ship4">
+			</div>
+			<div class="col-1  px-5 py-4 bg border ship4">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+		</div>
+		<!--Линия B-->
+		<div class="row">
+			<div class="col-1  px-5 py-4 bg-warning text-center border">
+				<h4>B</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space ">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border ship2">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border ship2">
+				
+			</div>
+		</div>
+		<!--Линия C-->
+		<div class="row">
+			<div class="col-1 px-5 py-4  bg-warning text-center border">
+				<h4>C</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1 px-5 py-4  bg border ship2">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border ship2">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border space">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border space">
+				
+			</div>	
+		</div>
+		<!--Линия D-->
+		<div class="row">
+			<div class="col-1 px-5 py-4  bg-warning text-center border">
+				<h4>D</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border space ">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border ship3">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space ">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+				
+			</div>
+		</div>
+		<!--Линия E-->
+		<div class="row">
+			<div class="col-1 px-5 py-4  bg-warning text-center border">
+				<h4>E</h4>
+			</div>
+			<div class="col-1 px-5 py-4  bg border space">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border ship3">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1 px-5 py-4  bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border space">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+				
+			</div>
+		</div>
+		<!--Линия F-->
+		<div class="row">
+			<div class="col-1 px-5 py-4 bg-warning text-center border">
+				<h4>F</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border ship3">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1 px-5 py-4 bg-warning text-center border">
+				<h4>G</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border ship2">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1 px-5 py-4 bg-warning text-center border">
+				<h4>H</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship2">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border ship3">
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship3">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship3">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship1 ">
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1 px-5 py-4 bg-warning text-center border">
+				<h4>F</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship1">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1 px-5 py-4 bg-warning text-center border">
+				<h4>I</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border space ">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border ship1">
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1 px-5 py-4 bg-warning text-center border">
+				<h4>J</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border space ">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1  px-5 py-4 bg border space">
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship1">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border space">
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+	<script type="text/javascript">
+		let ships1 = document.querySelectorAll(".ship1")
+		let ships2 = document.querySelectorAll(".ship2")
+		let ships3 = document.querySelectorAll(".ship3")
+		let ships4 = document.querySelectorAll(".ship4")
+		let score = 0
+		let spaces = document.querySelectorAll(".space")
+		let divR = document.querySelector(".divR")
+		let shipsG = 4
+		let shipsP = 6
+		let shipsO = 6
+		let shipsY = 4
+
+		for(let i=0; i<4; i=i+1)
+		ships1[i].onclick = function(){
+			ships1[i].style.backgroundColor = "yellow"
+			ships1[i].style.backgroundSize = "100% 100%"
+			alert("Корабль потонул")
+			score = score + 1
+			shipsY = shipsY - 1
+
+			document.querySelector(".score").innerHTML = score
+			if(shipsY == 3){
+				document.querySelector(".h2Y").innerHTML = shipsY
+			}
+			if(shipsY == 2){
+				document.querySelector(".h2Y").innerHTML = shipsY
+			}
+			if(shipsY == 1){
+				document.querySelector(".h2Y").innerHTML = shipsY
+			}
+			if(shipsY == 0){
+				document.querySelector(".h2Y").innerHTML = shipsY
+			}
+			if(shipsY == 0){
+				document.querySelector(".h2y").style.textDecoration = "line-through"
+			}
+			if (score == 20) {
+				alert("вы набрали 20 очков вы выйграли")
+				divR.style.display = "none"
+			}
+		}		
+		for(let o=0; o<6; o=o+1)
+		ships2[o].onclick = function(){
+			ships2[o].style.backgroundColor = "orange"
+			score = score + 1
+			shipsO = shipsO - 1
+			document.querySelector(".score").innerHTML = score
+			if(shipsO == 4){
+				document.querySelector(".h2O").innerHTML = 2
+				alert("Корабль потонул")
+			}
+			if(shipsO == 2){
+				document.querySelector(".h2O").innerHTML = 1
+			}
+			if(shipsO == 0){
+				document.querySelector(".h2O").innerHTML = 0
+			}
+			if(shipsO == 0){
+				document.querySelector(".h2o").style.textDecoration = "line-through"
+			}
+			if (score == 20) {
+				alert("вы набрали 20 очков вы выйграли")
+				divR.style.display = "none"
+			}
+		}
+		for(let i=0; i<6; i=i+1)
+		ships3[i].onclick = function(){
+			ships3[i].style.backgroundColor = "purple"
+			score = score + 1
+			shipsP = shipsP - 1
+			document.querySelector(".score").innerHTML = score
+			if(shipsP == 3){
+				document.querySelector(".h2P").innerHTML = 1
+				alert("Корабль потонул")
+			}
+			if(shipsP == 0){
+				document.querySelector(".h2P").innerHTML = 0
+			}
+			if(shipsP == 0){
+				document.querySelector(".h2p").style.textDecoration = "line-through"
+			}
+			if (score == 20) {
+				alert("вы набрали 20 очков вы выйграли")
+				divR.style.display = "none"
+			}
+		}
+		for(let i=0; i<4; i=i+1)
+		ships4[i].onclick = function(){
+			ships4[i].style.backgroundColor = "green"
+			score = score + 1
+			shipsG = shipsG - 1
+			document.querySelector(".score").innerHTML = score
+			if(shipsG == 0){
+				document.querySelector(".h2g").style.textDecoration = "line-through"
+				alert("Корабль потонул")
+			}
+			if(shipsG == 0){
+				document.querySelector(".h2G").innerHTML = 0
+			}
+			if (score == 20) {
+				alert("вы набрали 20 очков вы выйграли")
+				divR.style.display = "none"
+			}
+		}
+		for (let i=0; i<90; i=i+1) {
+			spaces[i].onclick = function(){
+			spaces[i].style.backgroundImage = "url(https://image.freepik.com/free-photo/blue-seawater-texture_160204-59.jpg)"
+			spaces[i].style.backgroundSize = "100% 100%"
+			}
+		}
+		
+		
+	</script>
+</body>
+</html>
